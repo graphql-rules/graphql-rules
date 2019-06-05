@@ -18,6 +18,8 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "firebase-tools": "^6.11.0",
+    "gatsby-cli": "^2.6.4",
     "prettier": "^1.17.1",
     "typescript": "^3.5.1"
   },
@@ -33,7 +35,8 @@
     "format": "prettier --write src/**/*.{js,jsx,ts,tsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "deploy": "npm run build && firebase deploy"
   },
   "repository": {
     "type": "git",
