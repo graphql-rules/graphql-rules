@@ -3,17 +3,29 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
+    "moduleResolution": "node",
     "lib": ["dom", "es2017"],
     "allowJs": true,
     "checkJs": true,
     "jsx": "react",
     "strict": true,
+    "sourceMap": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "noEmit": true,
     "noImplicitAny": false,
     "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "strictBindCallApply": false,
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedParameters": false,
+    "noUnusedLocals": true,
+    "noEmitOnError": false,
+    "pretty": true
   }
 }
