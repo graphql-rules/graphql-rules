@@ -1,11 +1,10 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "graphql-rules",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.8.3",
+    "gatsby": "^2.8.4",
     "gatsby-image": "^2.1.2",
     "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-offline": "^2.1.1",
@@ -22,9 +21,11 @@
     "prettier": "^1.17.1"
   },
   "keywords": [
-    "gatsby"
+    "graphql",
+    "rules"
   ],
-  "license": "MIT",
+  "author": "Pavel Chertorogov <pavel.chertorogov@gmail.com>",
+  "license": "CC-BY-4.0",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -35,9 +36,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "git+https://github.com/nodkz/graphql-rules.git"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/nodkz/graphql-rules/issues"
   }
 }
