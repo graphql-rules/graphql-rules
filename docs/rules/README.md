@@ -48,3 +48,4 @@ If you think that any rule is a complete mess or it is not fully disclosed, or w
   - [10.1.](./10-misc/misc-docs-markdown.md) Use markdown for documentation
 - **A. Appendix**
   - [A-1](./a-appendix/#A-1) Useful links
+- [Credits](./CREDITS.md)
