@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 module.exports = {
   siteMetadata: {
     title: `GraphQL Rules`,
@@ -32,4 +34,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};

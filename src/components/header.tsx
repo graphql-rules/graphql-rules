@@ -1,7 +1,11 @@
 import { Link } from 'gatsby';
 import React from 'react';
 
-const Header = ({ siteTitle }) => (
+interface Props {
+  siteTitle?: string;
+}
+
+const Header = ({ siteTitle = '' }: Props) => (
   <header
     style={{
       background: `rebeccapurple`,
@@ -29,9 +33,5 @@ const Header = ({ siteTitle }) => (
     </div>
   </header>
 );
-
-Header.defaultProps = {
-  siteTitle: ``,
-};
 
 export default Header;
