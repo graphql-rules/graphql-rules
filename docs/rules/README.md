@@ -1,6 +1,11 @@
+---
+path: '/rules'
+title: 'GraphQL-scheme design'
+---
+
 [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
 
-# Graphql-scheme design — make API comfortable, prevent pain and suffering
+# GraphQL-scheme design — make API comfortable, prevent pain and suffering
 
 Rules and recommendations mentioned in this paper were results of 3-years experience of using GraphQL both on front-end and back-end side. Also, we use recommendations and experience of Caleb Meredith (PostGraphQL author, Facebook ex-employee) and Shopify engineers.
 
