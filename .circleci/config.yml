@@ -26,6 +26,7 @@ jobs:
           key: v1-npm-deps-{{ checksum "yarn.lock" }}
           paths:
             - ./node_modules
+            - ~/.cache/yarn
 
       - run:
           name: Gatsby Build
