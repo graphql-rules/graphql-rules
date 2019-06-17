@@ -12,6 +12,7 @@
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sharp": "^2.1.3",
     "gatsby-plugin-typescript": "^2.0.15",
+    "gatsby-remark-use-frontmatter-path": "^1.0.0",
     "gatsby-source-filesystem": "^2.0.39",
     "gatsby-transformer-remark": "^2.3.12",
     "gatsby-transformer-sharp": "^2.1.21",
