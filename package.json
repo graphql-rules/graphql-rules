@@ -6,6 +6,7 @@
   "dependencies": {
     "gatsby": "^2.8.4",
     "gatsby-image": "^2.1.2",
+    "gatsby-plugin-catch-links": "^2.0.15",
     "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-offline": "^2.1.1",
     "gatsby-plugin-react-helmet": "^3.0.12",

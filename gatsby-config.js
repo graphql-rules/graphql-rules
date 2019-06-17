@@ -23,7 +23,13 @@ module.exports = {
         path: `${__dirname}/docs/rules`,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: ['gatsby-remark-use-frontmatter-path'],
+      },
+    },
+    `gatsby-plugin-catch-links`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
