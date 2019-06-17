@@ -1,4 +1,7 @@
-## 1. Naming rules
+---
+path: '/rules/naming'
+title: '1. Naming rules'
+---
 
 GraphQL uses regexp `/[_A-Za-z][_0-9A-Za-z]*/` to validate property and type names. In other words, GraphQL lets you use multiple styles, such as, `camelCase`, `under_score`, `UpperCamelCase` and `CAPITALIZED_WITH_UNDERSCORES`. Notice that that `kebab-case` is not supported.
 

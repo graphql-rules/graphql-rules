@@ -1,4 +1,7 @@
-### 6.4. Mutations should clearly describe all the mandatory arguments, there should be no options either-either.
+---
+path: '/rules/mutation-required-args'
+title: '6.4. Mutations should clearly describe all the mandatory arguments, there should be no options either-either.'
+---
 
 There are tasks when it is necessary to take different input parameters depending on certain input values. The problem is that in this case, it is necessary to specify the input parameters as optional, which can lead to errors, because the client does not know for sure which parameters are required in this or that case.
 

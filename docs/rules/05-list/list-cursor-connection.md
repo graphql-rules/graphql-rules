@@ -1,4 +1,7 @@
-### For infinite lists (infinite scroll) use [Relay Cursor Connections Specification](https://facebook.github.io/relay/graphql/connections.htm).
+---
+path: '/rules/list-cursor-connection'
+title: '5.5. For infinite lists (infinite scroll) use [Relay Cursor Connections Specification](https://facebook.github.io/relay/graphql/connections.htm).'
+---
 
 Pagination has a drawback. When items are adding or removing frequently, then when the user goes to the next page you may encounter problems:
 

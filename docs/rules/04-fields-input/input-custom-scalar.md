@@ -1,4 +1,7 @@
-### 4.2. Use strict scalar types for arguments
+---
+path: '/rules/input-custom-scalar'
+title: '4.2. Use strict scalar types for arguments'
+---
 
 Try using a stricter type for input data. For example, define a new scalar type `DateTime` instead of using a `String`. As you might know, GraphQL has 5 built-in scalar types and `date` isn't one of them. However, GraphQL allows to create a custom scalar type with type description and implement your own type validation, serialization and deserialization rules.
 

@@ -1,4 +1,7 @@
-### 3.1. Give descriptive names to fields.
+---
+path: '/rules/output-semantic-names'
+title: '3.1. Give descriptive names to fields.'
+---
 
 The rule goes without saying. Field names should communicate domain-specific meaning and not the implementation details. Это очень простое и банальное правило. Consider the following type:
 

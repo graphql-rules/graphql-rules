@@ -1,4 +1,7 @@
-### 1.3. Name ENUM types using `CAPITALIZED_WITH_UNDERSCORES` style.
+---
+path: '/rules/naming-enum'
+title: '1.3. Name ENUM types using `CAPITALIZED_WITH_UNDERSCORES` style.'
+---
 
 In GraphQL an enum represents a list of available values for specific type.
 

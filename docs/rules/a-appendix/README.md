@@ -1,4 +1,7 @@
-## A. Appendix
+---
+path: '/rules/appendix'
+title: 'A. Appendix'
+---
 
 ### <a name="A-1"></a> A-1. Useful links
 

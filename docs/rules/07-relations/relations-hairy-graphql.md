@@ -1,4 +1,7 @@
-### 7.1. GraphQL schema should be "hairy"
+---
+path: '/rules/relations-hairy-graphql'
+title: '7.1. GraphQL schema should be "hairy"'
+---
 
 Clients are now actively using a component approach. And if you look at Facebook Relay and how they use the composition of components and GraphQL fragments, you will notice how they broke the paradigm of writing a query "at the top" and offered a more convenient and error-resistant solution:
 

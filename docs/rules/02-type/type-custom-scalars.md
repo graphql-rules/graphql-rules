@@ -1,4 +1,7 @@
-### 2.1. Use custom scalar types to declare fields and arguments with certain semantic value.
+---
+path: '/rules/type-custom-scalars'
+title: '2.1. Use custom scalar types to declare fields and arguments with certain semantic value.'
+---
 
 If a field returns `String` your clients can't understand whether or not a field has semantic value. For example, a `String` type allows you to send pretty much anything including plain text, HTML, 255 chars string and base64.
 

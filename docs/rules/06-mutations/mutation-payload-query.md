@@ -1,4 +1,7 @@
-### 6.6.3. In the mutation response, return a field of type Query.
+---
+path: '/rules/mutation-payload-query'
+title: '6.6.3. In the mutation response, return a field of type Query.'
+---
 
 If your mutations return a Payload type, be sure to add a query field with the Query type to it.
 
@@ -106,7 +109,7 @@ const resolvers = {
         query: {}, // ✨✨✨ magic - just return empty Object
       };
     },
-  }
+  },
 };
 ```
 

@@ -1,4 +1,7 @@
-## 5. Rules of lists
+---
+path: '/rules/list'
+title: '5. Rules of lists'
+---
 
 I never saw an API that does not return a list of items. Or it's page by page or something built on cursors for infinite lists. Lists should be filtered, sorted, and the number of returned items should be limited. GraphQL itself does not limit the freedom of implementation, but in order to form a certain uniformity, it is necessary to have a standard.
 

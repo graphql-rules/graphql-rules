@@ -1,4 +1,7 @@
-### 6.1. Use Namespace-types to group mutations within a single resource.
+---
+path: '/rules/mutation-namespaces'
+title: '6.1. Use Namespace-types to group mutations within a single resource.'
+---
 
 In most GraphQL schemas it's scary to look at the mutations. Medium sized APIs may easily contain 50-100 mutations, and all that on the same level. Trying to find the required operation in such list is quite hard.
 
@@ -67,13 +70,18 @@ Using `graphql-compose`:
 
 ```js
 schemaComposer.Mutation.addNestedFields({
-  'article.like': { // ✨✨✨ magic! Just use dot-notation with `addNestedFields` method
+  'article.like': {
+    // ✨✨✨ magic! Just use dot-notation with `addNestedFields` method
     type: 'Boolean',
-    resolve: () => { /* resolver code */ }
+    resolve: () => {
+      /* resolver code */
+    },
   },
   'article.unlike': {
     type: 'Boolean',
-    resolve: () => { /* resolver code */ }
+    resolve: () => {
+      /* resolver code */
+    },
   },
 });
 ```

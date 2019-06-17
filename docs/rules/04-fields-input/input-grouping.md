@@ -1,4 +1,7 @@
-### 4.1. Put coupled arguments into own input-types.
+---
+path: '/rules/input-grouping'
+title: '4.1. Put coupled arguments into own input-types.'
+---
 
 It is quite often that certain arguments are logically connected. For example, a list of articles `[Article]` can be filtered by `lang`, `userId` and `rating` fields and sized using `limit` field. It is not advisable to have those arguments on the same level:
 

@@ -1,4 +1,7 @@
-### 6.3. Consider the ability to perform mutations on multiple items (same type batch changes).
+---
+path: '/rules/mutation-batch-changes'
+title: '6.3. Consider the ability to perform mutations on multiple items (same type batch changes).'
+---
 
 A rule adjusted after remark: Ivan Goncharov #42 date of last revision: 17.05.2019
 
@@ -13,7 +16,8 @@ type ArticleMutations {
 Client applications become smarter and more convenient. Often, a user is offered with batch operations – adding multiple records, mass deletion or sorting. It will be expensive to send operations one by one. Somehow aggregating them into a complex GraphQL query with several mutations, i.e. dynamically generating one common query on the client is a completely disgusting idea:
 
 ```graphql
-mutation DeleteArticles { # BAD
+mutation DeleteArticles {
+  # BAD
   op1: deleteArticle(id: 1)
   op2: deleteArticle(id: 2)
   op3: deleteArticle(id: 5)

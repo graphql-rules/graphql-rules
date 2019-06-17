@@ -1,4 +1,7 @@
-### 5.4. Use `page`, `perPage` args for pagination and return output type with `items` (array of elements) and `pageInfo` (meta-data).
+---
+path: '/rules/list-pagination'
+title: '5.4. Use `page`, `perPage` args for pagination and return output type with `items` (array of elements) and `pageInfo` (meta-data).'
+---
 
 Consider pagination as an alternative of limiting requested results by `limit` and `skip`.
 

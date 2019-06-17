@@ -1,3 +1,8 @@
+---
+path: '/rules/credits'
+title: 'Thanks...'
+---
+
 ## Thanks to first reviewers
 
 - Ivan Goncharov ([IvanGoncharov](https://github.com/IvanGoncharov))

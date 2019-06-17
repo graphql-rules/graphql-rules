@@ -1,4 +1,7 @@
-### 6.5. In mutations, put all variables into one unique input argument.
+---
+path: '/rules/mutation-input-arg'
+title: '6.5. In mutations, put all variables into one unique input argument.'
+---
 
 Try to use one input argument in mutations. It is much easier to use on the client side. The client will need to pass just one variable, not a wagon for each argument in the mutation.
 

@@ -1,4 +1,7 @@
-### 6.6. Every mutation should have a unique payload type.
+---
+path: '/rules/mutation-payload'
+title: '6.6. Every mutation should have a unique payload type.'
+---
 
 Use a unique payload type for every mutation. This way you'll be able to expand mutation response with additional fields later. While having a unique payload type per mutation, will make sure that you won't break other mutations when editing the current one.
 

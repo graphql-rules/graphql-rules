@@ -1,4 +1,7 @@
-### 5.1. Use `filter` argument to filter list
+---
+path: '/rules/list-filter'
+title: '5.1. Use `filter` argument to filter list'
+---
 
 Consider two approaches to organizing filtering. One where all arguments are on the same level:
 

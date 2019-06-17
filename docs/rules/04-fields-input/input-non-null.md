@@ -1,4 +1,7 @@
-### 4.3. Mark arguments as `required` if they are required to fulfill the request.
+---
+path: '/rules/input-non-null'
+title: '4.3. Mark arguments as `required` if they are required to fulfill the request.'
+---
 
 All fields in GraphQL are `nullable` by default. Hence it's a good practice to mark arguments required for query execution with `GraphQLNonNull` or in case of SDL with an exclamation mark – `String!`. This will allow detecting certain errors on the client at static analysis stage instead of a runtime stage.
 

@@ -1,4 +1,7 @@
-### 6.6.1. In the mutation response, return the modified resource and its id.
+---
+path: '/rules/mutation-payload-record'
+title: '6.6.1. In the mutation response, return the modified resource and its id.'
+---
 
 In the Payload type of mutation, the modified resource must be returned. It is best if the field that returns the modified resource will have a fixed name – a record. Then clients will be able to automatically read the results of your mutation and do not waste time searching for the field in which the changed resource is returned.
 

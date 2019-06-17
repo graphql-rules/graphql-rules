@@ -1,4 +1,7 @@
-## 2. Type rules
+---
+path: '/rules/type'
+title: '2. Type rules'
+---
 
 GraphQL specification defines 5 built-in scalar types - `String`, `Int`, `Float`, `Boolean` and `ID` (a string with a unique identifier). These types are JSON serializable and available in every programming language.
 

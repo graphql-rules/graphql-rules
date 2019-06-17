@@ -1,4 +1,7 @@
-### 1.2. Use `UpperCamelCase` for naming GraphQL types.<0></0>
+---
+path: '/rules/naming-types'
+title: '1.2. Use `UpperCamelCase` for naming GraphQL types.'
+---
 
 Naming types differs from naming fields.
 

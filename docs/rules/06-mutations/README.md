@@ -1,4 +1,7 @@
-## 6. Mutation rules
+---
+path: '/rules/mutation'
+title: '6. Mutation rules'
+---
 
 No matter how many schemes I saw, most of the mess is in the Mutations. The following rules will allow you to make your API dry, clean and comfortable.
 

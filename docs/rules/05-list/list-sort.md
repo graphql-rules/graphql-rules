@@ -1,4 +1,7 @@
-### 5.2. Use argument `sort` of type `Enum` or `[Enum!]` to sort lists.
+---
+path: '/rules/list-sort'
+title: '5.2. Use argument `sort` of type `Enum` or `[Enum!]` to sort lists.'
+---
 
 It is common to allow users to sort lists by a single or even multiple fields. А иногда требуется сортировка по нескольким полям.
 

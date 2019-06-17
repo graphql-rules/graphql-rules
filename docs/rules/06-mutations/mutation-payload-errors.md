@@ -1,4 +1,7 @@
-### 6.6.4. In the mutation response, return the errors field with typed user errors.
+---
+path: '/rules/mutation-payload-errors'
+title: '6.6.4. In the mutation response, return the errors field with typed user errors.'
+---
 
 In the resolver, you can throw the exhibition, and then the error flies to the global level, but you can not do so for the following reasons:
 
@@ -60,7 +63,7 @@ type LikePostPayload {
 }
 ```
 
-Thanks to the union-type LikePostProblems now through introspection clients will know what errors could be returned when you call the mutation likePost. For example, for such a request, they can read the name of the error from the __typename field for any type of error. Also thanks to the interface they can also read the message from any type of errors:
+Thanks to the union-type LikePostProblems now through introspection clients will know what errors could be returned when you call the mutation likePost. For example, for such a request, they can read the name of the error from the \_\_typename field for any type of error. Also thanks to the interface they can also read the message from any type of errors:
 
 ```graphql
 mutation {

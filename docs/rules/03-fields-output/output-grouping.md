@@ -1,4 +1,7 @@
-### 3.3. Colocate related fields in custom types
+---
+path: '/rules/output-grouping'
+title: '3.3. Colocate related fields in custom types'
+---
 
 #### Problem:
 

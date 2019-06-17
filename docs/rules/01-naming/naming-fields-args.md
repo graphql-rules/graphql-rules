@@ -1,4 +1,7 @@
-### 1.1. Use `camelCase` to name fields and arguments.
+---
+path: '/rules/naming-fields-args'
+title: '1.1. Use `camelCase` to name fields and arguments.'
+---
 
 Fields:
 
