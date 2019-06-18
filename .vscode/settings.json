@@ -1,5 +1,8 @@
 {
   "javascript.validate.enable": false,
+  "[typescriptreact]": {
+    "editor.formatOnSave": true
+  },
   "editor.formatOnSave": true,
   "eslint.validate": [
     { "language": "javascript", "autoFix": true },

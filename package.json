@@ -4,6 +4,7 @@
   "description": "",
   "version": "0.1.0",
   "dependencies": {
+    "@stackbit/gatsby-plugin-menus": "^0.0.4",
     "gatsby": "^2.8.4",
     "gatsby-image": "^2.1.2",
     "gatsby-plugin-catch-links": "^2.0.15",
@@ -18,7 +19,9 @@
     "gatsby-transformer-sharp": "^2.1.21",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "rehype-react": "^3.1.0",
+    "unist-util-find": "^1.0.1"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^1.9.0",
