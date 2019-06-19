@@ -10,5 +10,5 @@ However, when a scalar type is not representable in JSON by default (e.g. `Date`
 In such cases, GraphQL allows you to create your own custom scalar types. [This article](../types/README.md#custom-scalar-types) describes it.
 
 - **2. Type rules**
-  - [2.1.](./type-custom-scalars.md) Use custom scalar types if you want to declare fields or args with specific semantic value.
-  - [2.2.](./type-enumerable.md) Use Enum for fields which contain a specific set of values.
+  - [2.1. Use custom scalar types if you want to declare fields or args with specific semantic value.](./type-custom-scalars.md)
+  - [2.2. Use Enum for fields which contain a specific set of values.](./type-enumerable.md)
