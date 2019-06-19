@@ -32,6 +32,7 @@ module.exports = {
     `gatsby-plugin-catch-links`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -72,7 +73,16 @@ module.exports = {
         pageContextProperty: 'menus',
       },
     },
-    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-142402885-1",
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+        // cookieDomain: "example.com",
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
