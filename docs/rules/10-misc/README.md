@@ -5,4 +5,4 @@ title: '10. Other rules'
 
 ## 10. Other rules
 
-- [10.1.](./misc-docs-markdown.md) Use markdown for documentation
+- [10.1. Use markdown for documentation](./misc-docs-markdown.md)
