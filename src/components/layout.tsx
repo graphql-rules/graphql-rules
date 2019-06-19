@@ -5,45 +5,91 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from 'react';
+import React, { Fragment } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Footer from './footer';
 
+import Menu from './menu';
 import Header from './header';
-import './layout.css';
+
+import styled from 'styled-components';
 
 interface Props {
   children: React.ReactNode;
 }
 
-const Layout = ({ children }: Props) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
+interface State {
+  isMenuOpened: boolean;
+}
+
+const Body = styled.div`
+  /* background-color: rebeccapurple; */
+  display: flex;
+  flex-direction: column;
+`;
+
+const Container = styled.div`
+  display: flex;
+`;
+
+const DesktopOnly = styled.div`
+  @media screen and (max-width: 425px) {
+    display: none;
+  }
+`;
+
+const MobileMenu = styled.div`
+  height: 100%;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  /* background-color: burlywood; */
+`;
+
+class Layout extends React.Component<Props, State> {
+  state: State = { isMenuOpened: false };
+
+  _openMenu = () => {
+    this.setState((prevState) => ({
+      isMenuOpened: !prevState.isMenuOpened,
+    }));
+  };
+
+  render() {
+    const { children } = this.props;
+    const { isMenuOpened } = this.state;
+    return (
+      <StaticQuery
+        query={graphql`
+          query SiteTitleQuery {
+            site {
+              siteMetadata {
+                title
+              }
+            }
           }
-        }
-      }
-    `}
-    render={(data) => (
-      <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-          }}
-        >
-          <main>{children}</main>
-          <Footer />
-        </div>
-      </>
-    )}
-  />
-);
+        `}
+        render={(data) => (
+          <Body>
+            <Header siteTitle={data.site.siteMetadata.title} menuTap={this._openMenu} />
+            {isMenuOpened && (
+              <MobileMenu>
+                <Menu />
+              </MobileMenu>
+            )}
+            {!isMenuOpened && (
+              <Container>
+                <DesktopOnly>
+                  <Menu />
+                </DesktopOnly>
+                {children}
+                {/* <Footer /> */}
+              </Container>
+            )}
+          </Body>
+        )}
+      />
+    );
+  }
+}
 
 export default Layout;
