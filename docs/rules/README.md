@@ -50,5 +50,3 @@ If you think that any rule is a complete mess or it is not fully disclosed, or w
 - **A. Appendix**
   - [A-1 Useful links](./a-appendix/README.md#A-1)
 - [Credits](./CREDITS.md)
-
-[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)

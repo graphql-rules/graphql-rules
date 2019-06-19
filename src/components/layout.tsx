@@ -16,6 +16,7 @@ import styled from 'styled-components';
 
 interface Props {
   children: React.ReactNode;
+  hideMenu?: boolean;
 }
 
 interface State {
@@ -55,7 +56,7 @@ class Layout extends React.Component<Props, State> {
   };
 
   render() {
-    const { children } = this.props;
+    const { children, hideMenu } = this.props;
     const { isMenuOpened } = this.state;
     return (
       <StaticQuery
@@ -77,13 +78,17 @@ class Layout extends React.Component<Props, State> {
               </MobileMenu>
             )}
             {!isMenuOpened && (
-              <Container>
-                <DesktopOnly>
-                  <Menu />
-                </DesktopOnly>
-                {children}
-                {/* <Footer /> */}
-              </Container>
+              <Fragment>
+                <Container>
+                  {!hideMenu && (
+                    <DesktopOnly>
+                      <Menu />
+                    </DesktopOnly>
+                  )}
+                  {children}
+                </Container>
+                <Footer />
+              </Fragment>
             )}
           </Body>
         )}
