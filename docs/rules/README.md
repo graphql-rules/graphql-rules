@@ -1,13 +1,16 @@
 ---
 path: '/rules'
-title: 'GraphQL-scheme design — make API comfortable, prevent pain and suffering'
+title: 'GraphQL-schema design — make API creation comfortable and prevent pain and suffering to engineers '
 ---
 
-Rules and recommendations mentioned in this paper were results of 3-years experience of using GraphQL both on front-end and back-end side. Also, we use recommendations and experience of Caleb Meredith (PostGraphQL author, Facebook ex-employee) and Shopify engineers.
+Rules and recommendations mentioned here were the results of 3 years' experience of using GraphQL both on the frontend and backend sides. We also include the recommendations and experience of Caleb Meredith (PostGraphQL author, Facebook ex-employee) and Shopify engineers.
 
-This article could be changed in the future, cause current rules are advisory and may be improved, changed, or even become antipattern. But what is written here, suffered time and pain from the use of horrible GraphQL-schemes.
+This guide is intended to be open source and could change in the future, - the rules may be improved on, changed, or even become outdated. What is written here is a culmination of time and pain suffered from the use of horrible GraphQL-schemas.
 
-If you think that any rule is a complete mess or it is not fully disclosed, or want to add your own – please open the [issue](https://github.com/graphql-rules/graphql-rules/issues). Errors and typos can be corrected via GitHub pull requests. I've only just started to make the rules, but to finish the job and stick it all together, only collaborative work can help us.
+Making Changes to the Rules
+
+If you think that any rule is unclear or not provided in full detail, or want to add your own – please open an issue with your suggestions or contact me on Telegram at @nodkz.
+This is only an initial start to a rule book - by working together collaboratively we can combine our experiences and create a guide of best practices.
 
 ## TL;DR of all rules
 
