@@ -1,0 +1,21 @@
+html,
+body {
+  height: 100%;
+  /* background-color: lavenderblush; */
+  /* overflow: hidden; */
+  margin: 0;
+}
+
+/* p {
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+code {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+} */
