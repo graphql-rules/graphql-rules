@@ -11,6 +11,17 @@ const MenuItem = styled(Link)`
   line-height: 1.5rem;
   letter-spacing: -0.0175rem;
   font-size: 0.875rem;
+
+  color: #333;
+
+  &:hover {
+    color: #000;
+  }
+
+  &.active {
+    font-weight: bold;
+    background-color: rgba(135, 134, 131, 0.1);
+  }
 `;
 
 const MenuContainer = styled.ul`
@@ -22,7 +33,11 @@ const MenuContainer = styled.ul`
 const renderAst = new rehypeReact({
   createElement: React.createElement,
   components: {
-    a: ({ href, children }) => <MenuItem to={href}>{children}</MenuItem>,
+    a: ({ href, children }) => (
+      <MenuItem to={href} activeClassName="active">
+        {children}
+      </MenuItem>
+    ),
     ul: ({ children }) => <MenuContainer>{children}</MenuContainer>,
   },
 }).Compiler;

@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../components/footer';
 import styled from 'styled-components';
 import rehypeReact from 'rehype-react';
 
@@ -27,7 +26,10 @@ const RuleContainer = styled.div`
   max-width: 768px;
 `;
 
-const RuleBody = styled.div``;
+const RuleBody = styled.div`
+  max-width: 90vw;
+  word-break: break-word;
+`;
 
 const RuleTitle = styled.div`
   font-size: 2rem;
@@ -43,6 +45,9 @@ const Code = styled.pre`
   white-space: -pre-wrap;
   white-space: -o-pre-wrap;
   word-wrap: break-word;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
 `;
 
 // TODO: Extract, used in Menu but with different margin
@@ -56,7 +61,7 @@ const Hairline = styled.div`
 const renderAst = new rehypeReact({
   createElement: React.createElement,
   components: {
-    pre: ({ href, children }) => <Code to={href}>{children}</Code>,
+    pre: ({ children }) => <Code>{children}</Code>,
   },
 }).Compiler;
 
@@ -72,7 +77,6 @@ export default function Rule({ title, ruleHtmlAst, mdPath }: Props) {
             <div>{renderAst(ruleHtmlAst)}</div>
           </RuleDescription>
         </RuleBody>
-        <Footer />
       </RuleContainer>
     </Container>
   );

@@ -17,7 +17,7 @@ function IndexPage() {
   );
 
   return (
-    <Layout>
+    <Layout hideMenu>
       <SEO title="Home" />
       <Rule ruleHtmlAst={markdownRemark.htmlAst} title={''} />
     </Layout>
