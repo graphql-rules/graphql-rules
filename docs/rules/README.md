@@ -9,8 +9,7 @@ This guide is intended to be open source and could change in the future, - the r
 
 Making Changes to the Rules
 
-If you think that any rule is unclear or not provided in full detail, or want to add your own – please open an issue with your suggestions or contact me on Telegram at @nodkz.
-This is only an initial start to a rule book - by working together collaboratively we can combine our experiences and create a guide of best practices.
+If you think that any rule is unclear or not provided in full detail, or want to add your own – please open an [issue](https://github.com/graphql-rules/graphql-rules/issues) with your suggestions. This is only an initial start to a rule book - by working together collaboratively we can combine our experiences and create a guide of best practices.
 
 ## TL;DR of all rules
 
