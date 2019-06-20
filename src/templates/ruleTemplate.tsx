@@ -7,7 +7,11 @@ export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data; // data.markdownRemark holds our post data
-  const { frontmatter, htmlAst, fileAbsolutePath = '' } = markdownRemark;
+  const {
+    frontmatter: { title, pageType },
+    htmlAst,
+    fileAbsolutePath = '',
+  } = markdownRemark;
 
   const mdPath = fileAbsolutePath.replace(
     /.*\/docs\/rules\/(.*)$/i,
@@ -16,7 +20,7 @@ export default function Template({
 
   return (
     <Layout>
-      <Rule mdPath={mdPath} ruleHtmlAst={htmlAst} title={frontmatter.title} />
+      <Rule mdPath={mdPath} ruleHtmlAst={htmlAst} title={title} pageType={pageType} />
     </Layout>
   );
 }
@@ -29,6 +33,7 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
+        pageType
       }
       fileAbsolutePath
     }

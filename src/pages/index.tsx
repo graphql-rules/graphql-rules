@@ -6,20 +6,28 @@ import SEO from '../components/seo';
 import Rule from '../components/rule';
 
 function IndexPage() {
-  const { markdownRemark } = useStaticQuery(
+  const {
+    markdownRemark: {
+      htmlAst,
+      frontmatter: { pageType },
+    },
+  } = useStaticQuery(
     graphql`
       query {
         markdownRemark(fileAbsolutePath: { glob: "**/rules/README.md" }) {
           htmlAst
+          frontmatter {
+            pageType
+          }
         }
       }
     `
   );
 
   return (
-    <Layout hideMenu>
+    <Layout>
       <SEO title="Home" />
-      <Rule ruleHtmlAst={markdownRemark.htmlAst} title={''} />
+      <Rule ruleHtmlAst={htmlAst} pageType={pageType} title={''} />
     </Layout>
   );
 }

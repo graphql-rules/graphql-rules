@@ -1,4 +1,5 @@
 ---
+pageType: section
 path: '/rules/misc'
 title: '10. Other rules'
 ---

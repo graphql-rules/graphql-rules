@@ -1,4 +1,5 @@
 ---
+pageType: section
 path: '/rules/naming'
 title: '1. Naming rules'
 ---
@@ -11,7 +12,6 @@ We could refer to [Eye Tracking's](http://www.cs.kent.edu/~jmaletic/papers/ICPC2
 
 In the absence of conclusive research, we suggest to follow the rules: Давайте будем разбираться в каждом конкретном случае.
 
-- **1. Naming rules**
-  - [1.1. Use `camelCase` for GraphQL fields and arguments.](./naming-fields-args.md)
-  - [1.2. Use `UpperCamelCase` for GraphQL types.](./naming-types.md)
-  - [1.3. Use `CAPITALIZED_WITH_UNDERSCORES` to name ENUM types.](./naming-enum.md)
+- [1.1. Use `camelCase` for GraphQL fields and arguments.](./naming-fields-args.md)
+- [1.2. Use `UpperCamelCase` for GraphQL types.](./naming-types.md)
+- [1.3. Use `CAPITALIZED_WITH_UNDERSCORES` to name ENUM types.](./naming-enum.md)
