@@ -10,8 +10,8 @@ Even if you want to return only one record from your mutation, don't be tempted 
 
 ```diff
 type Mutation {
--  createPerson(input: ...): Person                # BAD
-+  createPerson(input: ...): CreatePersonPayload   # GOOD
+-  createPerson(input: ...): Person               # BAD
++  createPerson(input: ...): CreatePersonPayload  # GOOD
 }
 
 + type CreatePersonPayload {
@@ -25,7 +25,7 @@ It is important to note that the fields returned in your Payload type must be nu
 
 <!-- card-links -->
 
-- [6.6.1.](./mutation-payload-record.md) In the mutation response, return the modified resource and its `id`.
-- [6.6.2.](./mutation-payload-status.md) Return operation status in mutation response.
-- [6.6.3.](./mutation-payload-query.md) In the mutation response, return a field of type `Query`.
-- [6.6.4.](./mutation-payload-errors.md) In the mutation response, return the `errors` field with typed user errors.
+- [6.6.1. In the mutation response, return the modified resource and its `id`.](./mutation-payload-record.md)
+- [6.6.2. Return operation status in mutation response.](./mutation-payload-status.md)
+- [6.6.3. In the mutation response, return a field of type `Query`.](./mutation-payload-query.md)
+- [6.6.4. In the mutation response, return the `errors` field with typed user errors.](./mutation-payload-errors.md)
