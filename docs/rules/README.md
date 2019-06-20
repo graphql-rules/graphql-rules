@@ -10,6 +10,8 @@ This article could be changed in the future, cause current rules are advisory an
 
 If you think that any rule is a complete mess or it is not fully disclosed, or want to add your own – please open the [issue](https://github.com/graphql-rules/graphql-rules/issues). Errors and typos can be corrected via GitHub pull requests. I've only just started to make the rules, but to finish the job and stick it all together, only collaborative work can help us.
 
+<!-- card-links -->
+
 - [1. Naming rules](./01-naming/README.md)
   - [1.1. Use `camelCase` for GraphQL-fields and arguments.](./01-naming/naming-fields-args.md)
   - [1.2. Use `UpperCamelCase` for GraphQL-types.](./01-naming/naming-types.md)
@@ -46,6 +48,6 @@ If you think that any rule is a complete mess or it is not fully disclosed, or w
   - [7.1. GraphQL schema should be "hairy"](./07-relations/relations-hairy-graphql.md)
 - [10. Other rules](./10-misc/README.md)
   - [10.1. Use markdown for documentation](./10-misc/misc-docs-markdown.md)
-- **A. Appendix**
+- A. Appendix
   - [A-1 Useful links](./a-appendix/README.md#A-1)
 - [Credits](./CREDITS.md)

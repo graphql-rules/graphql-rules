@@ -12,6 +12,8 @@ We could refer to [Eye Tracking's](http://www.cs.kent.edu/~jmaletic/papers/ICPC2
 
 In the absence of conclusive research, we suggest to follow the rules: Давайте будем разбираться в каждом конкретном случае.
 
+<!-- card-links -->
+
 - [1.1. Use `camelCase` for GraphQL fields and arguments.](./naming-fields-args.md)
 - [1.2. Use `UpperCamelCase` for GraphQL types.](./naming-types.md)
 - [1.3. Use `CAPITALIZED_WITH_UNDERSCORES` to name ENUM types.](./naming-enum.md)
