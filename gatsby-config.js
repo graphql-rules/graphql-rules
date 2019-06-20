@@ -3,7 +3,7 @@
 module.exports = {
   siteMetadata: {
     title: `GraphQL Rules`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Rules and recommendations mentioned here were the results of 3 years' experience of using GraphQL both on the frontend and backend sides. We also include the recommendations and experience of Caleb Meredith (PostGraphQL author, Facebook ex-employee) and Shopify engineers.`,
     author: `Great folk`,
   },
   plugins: [

@@ -1,6 +1,6 @@
 # graphql-rules
 
-Currently site avaliable here [https://graphql-rules.firebaseapp.com/](https://graphql-rules.firebaseapp.com/)
+Currently site avaliable here [https://graphql-rules.com/](https://graphql-rules.com/)
 
 Content of rules can be found here [docs/rules](https://github.com/graphql-rules/graphql-rules/tree/master/docs/rules)
 
