@@ -9,8 +9,10 @@ const MenuItem = styled(Link)`
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   text-decoration: none;
   line-height: 1.5rem;
+  display: inline-block;
   letter-spacing: -0.0175rem;
   font-size: 0.875rem;
+  margin-bottom: 0.5rem;
 
   color: #333;
 

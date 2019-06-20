@@ -6,6 +6,8 @@ title: '6. Mutation rules'
 
 No matter how many schemes I saw, most of the mess is in the Mutations. The following rules will allow you to make your API dry, clean and comfortable.
 
+<!-- card-links -->
+
 - [6.1. Use Namespace-types to group mutations within a single resource.](./mutation-namespaces.md)
 - [6.2. Go beyond CRUD – create small mutations for different business operations on resources.](./mutation-business-operations.md)
 - [6.3. Consider the ability to perform mutations on multiple items (same type batch changes).](./mutation-batch-changes.md)
