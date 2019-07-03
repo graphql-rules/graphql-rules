@@ -36,7 +36,7 @@ This is only an initial start to a rule book - by working together collaborative
   - [5.2. Use argument `sort` of type `Enum` or `[Enum!]` for listings sorting.](./05-list/list-sort.md)
   - [5.3. Use `limit` with default value and `skip` to limit number of returned items in list.](./05-list/list-limit-skip.md)
   - [5.4. Use `page`, `perPage` args for pagination and return output type with `items` (array of elements) and `pageInfo` (meta-data).](./05-list/list-pagination.md)
-  - [5.5. For infinite lists (infinite scroll) use Relay Cursor Connections Specification.](./05-list/list-cursor-connection.md)
+  - [5.5. For infinite lists (infinite scroll) use Relay Cursor Connections Specification.](./05-list/list-cursor-pagination.md)
 - [6. Mutation rules](./06-mutations/README.md)
   - [6.1. Use Namespace-types to group mutations within a single resource.](./06-mutations/mutation-namespaces.md)
   - [6.2. Go beyond CRUD – create small mutations for different business operations on resources.](./06-mutations/mutation-business-operations.md)

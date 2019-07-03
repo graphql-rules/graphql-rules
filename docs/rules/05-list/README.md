@@ -12,4 +12,4 @@ I never saw an API that does not return a list of items. Or it's page by page or
 - [5.2. Use argument `sort` of type `Enum` or `[Enum!]` for listings sorting.](./list-sort.md)
 - [5.3. Use `limit` with default value and `skip` to limit number of returned items in list.](./list-limit-skip.md)
 - [5.4. Use `page`, `perPage` args for pagination and return output type with `items` (array of elements) and `pageInfo` (meta-data).](./list-pagination.md)
-- [5.5. For infinite lists (infinite scroll) use `Relay Cursor Connections Specification`](./list-cursor-connection.md)
+- [5.5. For infinite lists (infinite scroll) use `Relay Cursor Connections Specification`](./list-cursor-pagination.md)
