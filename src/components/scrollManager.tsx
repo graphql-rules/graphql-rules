@@ -28,7 +28,7 @@ interface Props {
  * Component that will save and restore Window scroll position.
  */
 export default class ScrollPositionManager extends React.Component<Props> {
-  _target: Window;
+  _target: Window | {};
 
   static defaultProps = {
     scrollStore: memoryStore,
@@ -37,7 +37,7 @@ export default class ScrollPositionManager extends React.Component<Props> {
   constructor(props) {
     super(props);
     this.connectScrollTarget = this.connectScrollTarget.bind(this);
-    this._target = window;
+    this._target = typeof window !== 'undefined' ? window : {};
   }
 
   connectScrollTarget(node) {
