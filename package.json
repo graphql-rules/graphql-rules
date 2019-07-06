@@ -4,7 +4,6 @@
   "description": "",
   "version": "0.1.0",
   "dependencies": {
-    "@stackbit/gatsby-plugin-menus": "^0.0.4",
     "babel-plugin-styled-components": "^1.10.1",
     "gatsby": "^2.8.4",
     "gatsby-image": "^2.1.2",

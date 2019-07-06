@@ -776,12 +776,6 @@
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
 
-"@stackbit/gatsby-plugin-menus@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@stackbit/gatsby-plugin-menus/-/gatsby-plugin-menus-0.0.4.tgz#d7e9ba055e1aa185ecc5d313752adc77c95cbf4c"
-  dependencies:
-    lodash "^4.17.11"
-
 "@stefanprobst/lokijs@^1.5.6-b":
   version "1.5.6-b"
   resolved "https://registry.yarnpkg.com/@stefanprobst/lokijs/-/lokijs-1.5.6-b.tgz#6a36a86dbe132e702e6b15ffd3ce4139aebfe942"
