@@ -42,19 +42,6 @@ const RuleTitle = styled.div`
 `;
 const RuleDescription = styled.div``;
 
-// Taken from https://www.tutorialspoint.com/How-do-I-wrap-text-in-a-pre-tag-in-HTML
-const Code = styled.pre`
-  overflow-x: auto;
-  white-space: pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
-  word-wrap: break-word;
-  background-color: #f2f2f2;
-  padding: 10px;
-  border-radius: 5px;
-`;
-
 // TODO: Extract, used in Menu but with different margin
 const Hairline = styled.div`
   display: block;
@@ -110,9 +97,7 @@ const RuleTileHeader = styled(Link)`
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
-  components: {
-    pre: ({ children }) => <Code>{children}</Code>,
-  },
+  components: {},
 }).Compiler;
 
 const renderCardLinksAst = new rehypeReact({

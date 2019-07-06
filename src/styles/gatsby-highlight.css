@@ -1,0 +1,144 @@
+.gatsby-highlight {
+  background: #25292c;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.gatsby-highlight pre[class*='language-'] {
+  background-color: transparent;
+  border: 0;
+  padding: 1.2rem 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.gatsby-highlight pre[class*='language-']::before {
+  background: #25292c;
+  border-radius: 0 0 4px 4px;
+  color: #000000;
+  font-size: 0.75rem;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  letter-spacing: 0.075em;
+  line-height: 1;
+  padding: 0.25rem 0.5rem;
+  position: absolute;
+  top: 0;
+  right: 1.5rem;
+  text-align: right;
+  text-transform: uppercase;
+  text-shadow: none;
+}
+
+.gatsby-highlight pre[class='language-javascript']::before {
+  content: 'js';
+  background: #f7df1e;
+}
+
+.gatsby-highlight pre[class='language-js']::before {
+  content: 'js';
+  background: #f7df1e;
+}
+
+.gatsby-highlight pre[class='language-jsx']::before {
+  content: 'jsx';
+  background: #61dafb;
+}
+
+.gatsby-highlight pre[class='language-graphql']::before {
+  content: 'GraphQL';
+  background: #e10098;
+  color: #ffffff;
+}
+
+.gatsby-highlight pre[class='language-html']::before {
+  content: 'html';
+  background: #005a9c;
+  color: #ffffff;
+}
+
+.gatsby-highlight pre[class='language-css']::before {
+  content: 'css';
+  background: #ff9800;
+  color: #ffffff;
+}
+
+.gatsby-highlight pre[class='language-mdx']::before {
+  content: 'mdx';
+  background: #f9ac00;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.gatsby-highlight pre[class='language-shell']::before {
+  content: 'shell';
+}
+
+.gatsby-highlight pre[class='language-sh']::before {
+  content: 'sh';
+}
+
+.gatsby-highlight pre[class='language-bash']::before {
+  content: 'bash';
+}
+
+.gatsby-highlight pre[class='language-yaml']::before {
+  content: 'yaml';
+  background: #ffa8df;
+}
+
+.gatsby-highlight pre[class='language-markdown']::before {
+  content: 'md';
+}
+
+.gatsby-highlight pre[class='language-json']::before,
+.gatsby-highlight pre[class='language-json5']::before {
+  content: 'json';
+  background: linen;
+}
+
+.gatsby-highlight pre[class='language-diff']::before {
+  content: 'diff';
+  background: #e6ffed;
+}
+
+.gatsby-highlight pre[class='language-text']::before {
+  content: 'text';
+  background: #ffffff;
+}
+
+.gatsby-highlight pre[class='language-flow']::before {
+  content: 'flow';
+  background: #e8bd36;
+}
+
+.gatsby-highlight pre code {
+  display: block;
+  font-size: 100%;
+  line-height: 1.5;
+  float: left;
+  padding: 0 1.2rem;
+}
+
+.gatsby-highlight-code-line {
+  background: #faede5;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.25rem;
+  border-left: 0.25rem solid #f1beb6;
+  display: block;
+}
+
+.gatsby-highlight pre::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.gatsby-highlight pre::-webkit-scrollbar-thumb {
+  background: #9b918d;
+}
+
+.gatsby-highlight pre::-webkit-scrollbar-track {
+  background: #d4d4d4;
+}

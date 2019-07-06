@@ -37,6 +37,8 @@ module.exports = {
               wrapperStyle: (fluidResult) => `flex:${Math.round(fluidResult.aspectRatio)};`,
             },
           },
+          'gatsby-remark-code-titles',
+          { resolve: 'gatsby-remark-prismjs', options: { noInlineHighlight: true } },
         ],
       },
     },
