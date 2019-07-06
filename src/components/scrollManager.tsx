@@ -22,6 +22,7 @@ interface Props {
   scrollKey: string;
   children?: ({ connectScrollTarget: any }) => React.ReactNode;
   scrollStore?: any;
+  forceRestore?: boolean;
 }
 
 /**
@@ -70,7 +71,7 @@ export default class ScrollPositionManager extends React.Component<Props> {
   }
 
   componentDidUpdate(prevProps) {
-    if (this.props.scrollKey !== prevProps.scrollKey) {
+    if (this.props.scrollKey !== prevProps.scrollKey || this.props.forceRestore) {
       this.restoreScrollPosition();
     }
   }

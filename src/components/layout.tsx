@@ -132,7 +132,7 @@ class Layout extends React.Component<Props, State> {
         </ContainerHeader>
 
         <Body>
-          <ScrollManager scrollKey="left-menu">
+          <ScrollManager scrollKey="left-menu" forceRestore={isMenuOpened}>
             {({ connectScrollTarget }) => (
               <BodyLeft ref={connectScrollTarget} isMenuOpened={isMenuOpened}>
                 <Menu />
