@@ -45,7 +45,6 @@ const renderAst = new rehypeReact({
 }).Compiler;
 
 const Container = styled.div`
-  /* background-color: deeppink; */
   max-width: 300px;
 `;
 

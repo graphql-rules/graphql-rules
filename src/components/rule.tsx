@@ -26,7 +26,7 @@ const RuleContainer = styled.div`
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
   letter-spacing: -0.02rem;
   max-width: 768px;
 `;

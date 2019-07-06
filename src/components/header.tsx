@@ -4,7 +4,6 @@ import styled from 'styled-components';
 
 interface Props {
   siteTitle?: string;
-  menuTap: () => void;
 }
 
 const Container = styled.div`
@@ -19,7 +18,7 @@ const Container = styled.div`
 
 const Title = styled.div`
   flex: 1;
-  padding: 24px 0 28px 20px;
+  padding: 14px 0 18px 20px;
 `;
 
 const HomeLink = styled(Link)`
@@ -30,19 +29,11 @@ const HomeLink = styled(Link)`
   color: black;
 `;
 
-const MobileOnly = styled.div`
-  margin-right: 20px;
-  @media screen and (min-width: 425px) {
-    display: none;
-  }
-`;
-
-const Header = ({ siteTitle = '', menuTap }: Props) => (
+const Header = ({ siteTitle = '' }: Props) => (
   <Container>
     <Title>
       <HomeLink to="/">{siteTitle}</HomeLink>
     </Title>
-    <MobileOnly onClick={menuTap}>Menu</MobileOnly>
   </Container>
 );
 
