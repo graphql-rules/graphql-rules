@@ -1,12 +1,12 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import Footer from './footer';
+import styled from 'styled-components';
 
+import ScrollManager from './scrollManager';
+import Footer from './footer';
 import Menu from './menu';
 import MenuIcon from './menuIcon';
 import Header from './header';
-
-import styled from 'styled-components';
 
 interface Props {
   children: React.ReactNode;
@@ -132,9 +132,13 @@ class Layout extends React.Component<Props, State> {
         </ContainerHeader>
 
         <Body>
-          <BodyLeft isMenuOpened={isMenuOpened}>
-            <Menu />
-          </BodyLeft>
+          <ScrollManager scrollKey="left-menu">
+            {({ connectScrollTarget }) => (
+              <BodyLeft ref={connectScrollTarget} isMenuOpened={isMenuOpened}>
+                <Menu />
+              </BodyLeft>
+            )}
+          </ScrollManager>
           <BodyCenter>
             {children}
             <Footer />
