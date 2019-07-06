@@ -29,6 +29,7 @@ module.exports = {
       options: {
         plugins: [
           'gatsby-remark-use-frontmatter-path',
+          'gatsby-remark-responsive-iframe',
           {
             resolve: `gatsby-remark-images`,
             options: {

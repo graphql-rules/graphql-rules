@@ -130,3 +130,7 @@ And get a response from the server in this shape:
   },
 }
 ```
+
+## Related video about handling GraphQL errors by Sasha Solomon
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bhsZsQfePDY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
