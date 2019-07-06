@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const HEIGHT = 6;
+const HEIGHT = 4;
 const COLOR = '#444';
 
 const MenuIconContainer = styled.div`

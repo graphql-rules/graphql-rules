@@ -53,7 +53,7 @@ const Body = styled.div`
 const SHADOW_WIDTH = '24px';
 const BodyLeft = styled.div<{ isMenuOpened: boolean }>`
   flex: 0 0 auto;
-  max-height: calc(100vh - ${presets.headerHeight});
+  max-height: calc(100% - ${presets.headerHeight});
   margin-right: ${SHADOW_WIDTH};
   width: calc(${presets.menuWidth} - ${SHADOW_WIDTH});
   overflow: auto;
@@ -62,8 +62,8 @@ const BodyLeft = styled.div<{ isMenuOpened: boolean }>`
   ${MEDIA_FOR_OVERFLOW_MENU} {
     background-color: white;
     top: 0;
-    height: 100vh;
-    max-height: 100vh;
+    height: 100%;
+    max-height: 100%;
     bottom: 0;
     display: ${({ isMenuOpened }) => (isMenuOpened ? 'block' : 'none')};
     z-index: 100;
@@ -87,14 +87,14 @@ const BodyRight = styled.div`
   flex: 0 0 auto;
 `;
 
-const MenuIconBG = styled.div`
+const MenuIconWithG = styled.div`
   display: none; // Invisible by default
   position: fixed;
-  bottom: 30px;
-  right: 50px;
+  bottom: 20px;
+  right: 20px;
   background: #ccc;
-  padding: 15px;
-  border-radius: 50px;
+  padding: 13px;
+  border-radius: 40px;
   z-index: 1000;
   ${MEDIA_FOR_OVERFLOW_MENU} {
     display: block; // Visible on small screens
@@ -142,9 +142,9 @@ class Layout extends React.Component<Props, State> {
           <BodyRight />
         </Body>
 
-        <MenuIconBG onClick={this.toogleOverflowMenu}>
+        <MenuIconWithG onClick={this.toogleOverflowMenu}>
           <MenuIcon closeIcon={isMenuOpened} />
-        </MenuIconBG>
+        </MenuIconWithG>
       </Container>
     );
   }
