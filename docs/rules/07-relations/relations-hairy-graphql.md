@@ -17,11 +17,11 @@ For GraphQL fragments working fine on the client, you need a server that will in
 
 As an example, we can cite a strongly connected, "hairy" GitHub API scheme (see how many connections between types):
 
-![hairy-github](https://user-images.githubusercontent.com/1946920/57200267-b0ee2a80-6fab-11e9-9c76-6053abe48ecd.jpg)
+![hairy-github](./hairy-github.jpg)
 
 And as an example of a loosely-connected, "bald" `RestQL` API this tree looking API will work perfectly:
 
-![non-hairy-amazon](https://user-images.githubusercontent.com/1946920/57200270-b3e91b00-6fab-11e9-9d65-e6f794ea42f5.jpg)
+![non-hairy-amazon](./non-hairy-amazon.jpg)
 
 These pictures are made using the graphql-voyager tool by Ivan Goncharov and Roman Gotsiy. You can download the introspection of any scheme and visually evaluate whether she "hairy" or "bald".
 

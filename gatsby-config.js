@@ -23,10 +23,20 @@ module.exports = {
         path: `${__dirname}/docs/rules`,
       },
     },
+    `gatsby-plugin-sharp`,
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: ['gatsby-remark-use-frontmatter-path'],
+        plugins: [
+          'gatsby-remark-use-frontmatter-path',
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 600,
+              wrapperStyle: (fluidResult) => `flex:${Math.round(fluidResult.aspectRatio)};`,
+            },
+          },
+        ],
       },
     },
     `gatsby-plugin-catch-links`,
@@ -76,7 +86,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-142402885-1",
+        trackingId: 'UA-142402885-1',
         head: false,
         anonymize: true,
         respectDNT: true,
