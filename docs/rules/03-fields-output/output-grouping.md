@@ -53,7 +53,7 @@ Now if `byPhone` isn't null then it surely contains a phone number and operator 
 
 ##### Solution 2: Use union types with fragments
 
-If you are not familiar with Union types you can think of them as "either A or B but not both". You can find more details about Union types [here](https://github.com/nodkz/conf-talks/tree/master/articles/graphql/types#union-types).
+If you are not familiar with Union types you can think of them as "either A or B but not both".
 
 ```graphql
 # Basic type for complaint

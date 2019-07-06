@@ -8,7 +8,7 @@ GraphQL specification defines 5 built-in scalar types - `String`, `Int`, `Float`
 
 However, when a scalar type is not representable in JSON by default (e.g. `Date`) the backend has to figure out a data format that can be serializable and transmittable via JSON. The backend also needs to deserialize the field received from a client.
 
-In such cases, GraphQL allows you to create your own custom scalar types. [This article](../types/README.md#custom-scalar-types) describes it.
+In such cases, GraphQL allows you to create your own custom scalar types.
 
 <!-- card-links -->
 
