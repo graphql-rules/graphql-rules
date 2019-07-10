@@ -50,6 +50,8 @@ This is only an initial start to a rule book - by working together collaborative
     - [6.6.4. In the mutation response, return the `errors` field with typed user errors.](./06-mutations/mutation-payload-errors.md)
 - [7. Rules of linkages between types (relationships)](./07-relations/README.md)
   - [7.1. GraphQL schema should be "hairy"](./07-relations/relations-hairy-graphql.md)
+- [8. Authorization](./08-authorization/README.md)
+  - [8.1. Schema diffing based authorization](./08-authorization/authorization-schema-diffing.md)
 - [10. Other rules](./10-misc/README.md)
   - [10.1. Use markdown for documentation](./10-misc/misc-docs-markdown.md)
 - A. Appendix
