@@ -5,7 +5,7 @@ title: '3.3. Colocate related fields in custom types'
 
 #### Problem:
 
-In some cases, a Type is expected to have a different set of non-null fields depending on the value of another field. Consider a `Claim` that can be filed either by mail or by phone. The `operatorCode` field stores code of the operator who received the call and null if the Claim was filed by an email. Т.е. оно всегда заполнено если указан телефон, и пустое если жалоба пришла по почте.
+In some cases, a Type is expected to have a different set of non-null fields depending on the value of another field. Consider a `Claim` that can be filed either by mail or by phone. The `operatorCode` field stores code of the operator who received the call and `null` if the `Claim` was filed by an `email`.
 
 ```graphql
 type Claim {
@@ -22,7 +22,7 @@ Define `Claim` in a way that maximizes the number of non-null fields. By doing t
 
 #### Solutions:
 
-In the original Claim type all fields are nullable except for <0>text</0> API consumers will need to check every value before processing it.
+In the original Claim type all fields are nullable except for `text` API consumers will need to check every value before processing it.
 
 ##### Consider two solutions:
 
