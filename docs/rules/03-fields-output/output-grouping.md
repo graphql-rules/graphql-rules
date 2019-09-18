@@ -30,7 +30,7 @@ In the original Claim type all fields are nullable except for `text` API consume
 
 ##### Solution 1: Create a new type with related fields
 
-Выносите взаимосвязанные поля на уровень ниже в новый output-тип. Let's create a new type `ClaimByPhone` that contains `phone` and `operatorCode` both of which are NonNull. Then our scheme can be represented as follows:
+Let's create a new type `ClaimByPhone` that contains `phone` and `operatorCode` both of which are NonNull. Then our scheme can be represented as follows:
 
 ```graphql
 type Claim {
