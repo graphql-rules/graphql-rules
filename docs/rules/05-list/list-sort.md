@@ -3,9 +3,9 @@ path: '/rules/list-sort'
 title: '5.2. Use argument `sort` of type `Enum` or `[Enum!]` to sort lists.'
 ---
 
-It is common to allow users to sort lists by a single or even multiple fields. А иногда требуется сортировка по нескольким полям.
+It is common to allow users to sort lists by a single or even multiple fields.
 
-The first thing the team has to do is choose a name for a sort argument. The following popular names can be used — `sort`, `order`, `orderBy`. Т.к. The word `order` can be treated differently in many contexts (food order, alphabetical order, etc.). Also, it's mainly used in relational databases. Then the best choice of the name for the sort field is **sort**. It can be clearly understood and appreciated by everyone.
+The first thing the team has to do is choose a name for a sort argument. The following popular names can be used — `sort`, `order`, `orderBy`. Т.к. The word `order` can be treated differently in many contexts (food order, alphabetical order, etc.). Also, it's mainly used in relational databases. Then the best choice of the name for the sort field is `sort`. It can be clearly understood and appreciated by everyone.
 
 Since the argument name is defined, then you must select the type for the sorting argument:
 
