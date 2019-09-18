@@ -12,4 +12,4 @@ type Meeting {
 }
 ```
 
-Whoever sees the type `Meeting` for the first time will be guessing what is exactly stored in the `bodyHtml` field. While backend developers can add a description to fields it is much easier and more clear to have a name that doesn't require additional explanation. A name that clearly communicates its domain meaning. Но черт возьми, можно же поле в АПИ назвать `description`, а в базе пусть хранится как `bodyHtml`, тогда и без документации все понятно.
+Whoever sees the type `Meeting` for the first time will be guessing what is exactly stored in the `bodyHtml` field. While backend developers can add a description to fields it is much easier and more clear to have a name that doesn't require additional explanation. A name that clearly communicates its domain meaning. So in the database it can still be `bodyHtml` while in API it will have nice and concise `description` field with a proper `HTML` type saying everything without additional explanations.
