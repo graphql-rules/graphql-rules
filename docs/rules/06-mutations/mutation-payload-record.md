@@ -9,8 +9,8 @@ It is also advisable not to be lazy and provide a recordId field that returns th
 
 ```diff
 type CreatePersonPayload {
-+  recordId: ID!
-+ record: Person
++  recordId: ID
++  record: Person
   # ...  any other fields you like
 }
 ```
