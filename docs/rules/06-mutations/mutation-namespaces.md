@@ -20,11 +20,11 @@ const ArticleMutations = new GraphQLObjectType({
   fields: () => {
     like: {
       type: GraphQLBoolean,
-      resolve: () => { /* resolver code */ },
+      resolve: () => ({ /* resolver code */ }),
     },
     unlike: {
       type: GraphQLBoolean,
-      resolve: () => { /* resolver code */ },
+      resolve: () => ({ /* resolver code */ }),
     },
   },
 });
