@@ -26,7 +26,7 @@ export default new GraphQLScalarType({
   // Each type needs it own unique name
   name: 'DateTime',
   // Good practice is to define your type decription, so it can be displayed in the documentation
-  description: 'A string which represents a HTTP URL',
+  description: 'A string which represents a date and time',
 
   // 2) --- DEFINE HOW TO RETURN TYPE TO THE CONSUMER ---
   // You need to implement 'serialize' function that would convert
