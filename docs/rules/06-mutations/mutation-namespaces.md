@@ -95,7 +95,7 @@ mutation {
   }
 
   ### Forget about ugly mutations names!
-  # artileLike
+  # articleLike
   # likeArticle
 }
 ```
