@@ -5,7 +5,7 @@ title: '3.3. Colocate related fields in custom types'
 
 #### Problem:
 
-In some cases, a Type is expected to have a different set of non-null fields depending on the value of another field. Consider a `Claim` that can be filed either by mail or by phone. The `operatorCode` field stores code of the operator who received the call and `null` if the `Claim` was filed by an `email`.
+In some cases, a Type is expected to have a different set of non-null fields depending on the value of another field. Consider a type representing claims received by phone or email:
 
 ```graphql
 type Claim {
@@ -16,21 +16,28 @@ type Claim {
 }
 ```
 
+This type definition results in an object in 2 possible configurations from our business requirements:
+- emailed claims have a NonNull `email` field but `null` `operatorCode` and `phone`
+- claims received by phone have NonNull `operatorCode` and `phone` fields but `null` `email` field
+
+It's easy to see how this would result in extra work by the client consuming the response as `null` checks would have to be made.  
+
 #### Goal:
 
-Define `Claim` in a way that maximizes the number of non-null fields. By doing that we reduce the number of null checks required on the client side.
+Define `Claim` in a way that maximizes the number of non-`null` fields. By doing so we reduce the number of `null` checks required on the client side.
 
 #### Solutions:
 
-In the original Claim type all fields are nullable except for `text` API consumers will need to check every value before processing it.
+In the original `Claim` type all fields are nullable except for `text`. API consumers will need to check every value before processing it.
 
 ##### Consider two solutions:
 
-1. Create a new type with related fields 2) Use union types with fragments
+1. Create a new type with related fields 
+2. Use [`union`](https://spec.graphql.org/June2018/#sec-Unions) types with fragments
 
 ##### Solution 1: Create a new type with related fields
 
-Let's create a new type `ClaimByPhone` that contains `phone` and `operatorCode` both of which are NonNull. Then our scheme can be represented as follows:
+Let's create a new type `ClaimByPhone` that contains NonNull `phone` and `operatorCode` fields. Then our schema can be represented as follows:
 
 ```graphql
 type Claim {
@@ -49,11 +56,11 @@ type ClaimByMail {
 }
 ```
 
-Now if `byPhone` isn't null then it surely contains a phone number and operator code. It becomes possible to make interrelated fields mandatory.
+Now if `byPhone` isn't `null` then it surely contains a `phone` and `operatorCode`, making interrelated fields mandatory.
 
 ##### Solution 2: Use union types with fragments
 
-If you are not familiar with Union types you can think of them as "either A or B but not both".
+If you are not familiar with [Union types](https://spec.graphql.org/June2018/#sec-Unions) you can think of them as "either A or B but not both".
 
 ```graphql
 # Basic type for complaint
@@ -78,7 +85,7 @@ type ClaimByMail implements ClaimBase {
 union Claim = ClaimByPhone | ClaimByMail
 ```
 
-Then the client requests Сlaim with fragments as follows:
+Then the client requests `Сlaim` with fragments as follows:
 
 ```graphql
 query {
@@ -96,4 +103,4 @@ query {
 }
 ```
 
-Both approaches make the scheme more strict and easier for frontend developers to deal with related fields.
+Both approaches make the schema more strict, readable, and easier for frontend developers to deal with related fields.
