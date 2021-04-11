@@ -13,7 +13,7 @@ type Query {
 }
 ```
 
-But if you focus only on the arguments `page` and `page`, the benefit of your pagination for clients will be no better than `limit` and `skip`. In order for a client application to render pagination properly, it needs to provide not only the list of items themselves but also additional metadata with at least a total number of pages and records. For pagination metadata, you must have the following generic type `PaginationInfo`:
+But if you focus only on the arguments `page` and `perPage`, the benefit of your pagination for clients will be no better than `limit` and `skip`. In order for a client application to render pagination properly, it needs to provide not only the list of items themselves but also additional metadata with at least a total number of pages and records. For pagination metadata, you must have the following generic type `PaginationInfo`:
 
 ```graphql
 type PaginationInfo {
