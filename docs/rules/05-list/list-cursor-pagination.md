@@ -20,7 +20,7 @@ However, the appearance of the infinite scroll GraphQL queries is not very good 
     edges {
       cursor
       node {
-        # только на 3-уровне вложенности получаем данные записи
+        # Only at the 3rd level of nesting we get the record data
         id
         name
       }
