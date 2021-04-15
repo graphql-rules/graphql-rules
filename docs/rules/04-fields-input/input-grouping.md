@@ -16,7 +16,7 @@ type Query {
 }
 
 input ArticleFilter {
-  lang: Stirng
+  lang: String
   userId: Int
   rating: MinMaxInput
 }
