@@ -11,7 +11,7 @@ Either way, there is a better approach - Namespace-types. Namespace types are th
 
 Implementation in Node.js is quite trivial. Here are some examples, using different libraries:
 
-Implementation using starndard `graphql`:
+Implementation using standard `graphql`:
 
 ```js
 // Create Namespace type for Article mutations
