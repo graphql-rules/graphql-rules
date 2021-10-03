@@ -40,7 +40,7 @@ type SpikeProtectionProblem implements ProblemInterface {
   wait: Int!
 }
 
-type PostDoesNotExistsProblem implements ProblemInterface {
+type PostDoesNotExistProblem implements ProblemInterface {
   message: String!
   postId: Int!
 }
@@ -53,7 +53,7 @@ type Mutation {
   likePost(id: Int!): LikePostPayload
 }
 
-union LikePostProblems = SpikeProtectionProblem | PostDoesNotExistsProblem;
+union LikePostProblems = SpikeProtectionProblem | PostDoesNotExistProblem;
 
 type LikePostPayload {
   recordId: Int
@@ -97,7 +97,7 @@ mutation {
         message
         wait
       }
-      ... on PostDoesNotExistsProblem {
+      ... on PostDoesNotExistProblem {
         message
         postId
       }
@@ -114,8 +114,8 @@ And get a response from the server in this shape:
     likePost: {
       errors: [
         {
-          __typename: 'PostDoesNotExistsProblem',
-          message: 'Post does not exists!',
+          __typename: 'PostDoesNotExistProblem',
+          message: 'Post does not exist!',
           postId: 666,
         },
         {
