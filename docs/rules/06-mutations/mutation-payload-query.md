@@ -53,7 +53,7 @@ mutation {
 
 On the server side, you can add the query in the Payload-type as follows:
 
-Implementation using starndard `graphql`:
+Implementation using standard `graphql`:
 
 ```js
 const QueryType = new GraphQLObjectType({ name: 'Query', fields: ... });
