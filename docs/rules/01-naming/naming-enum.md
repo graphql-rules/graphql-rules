@@ -30,3 +30,5 @@ query {
   }
 }
 ```
+
+This rule can be validated using `graphql-eslint`, read more about [`naming-convention`](https://github.com/dotansimha/graphql-eslint/blob/master/docs/rules/naming-convention.md) rule.

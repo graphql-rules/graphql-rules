@@ -45,7 +45,7 @@ Same, but using `graphql-tools`.
 
 ```js
 const typeDefs = gql`
-type Mutation {
+  type Mutation {
     article: ArticleMutations
   }
 
@@ -58,7 +58,7 @@ type Mutation {
 const resolvers = {
   Mutation: {
     article: () => ({}), // ✨✨✨ magic! which allows to proceed call of sub-methods
-  }
+  },
   ArticleMutations: {
     like: () => { /* resolver code */ },
     unlike: () => { /* resolver code */ },

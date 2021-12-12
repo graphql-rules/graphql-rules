@@ -32,4 +32,6 @@ According to [Wikipedia](<https://en.wikipedia.org/wiki/Naming_convention_(progr
 
 While it's possible to use `under_score` in those languages, people tend to stick to `camelCase`. If you find any statistics related to the usage of `camelCase` and `under_score` in any programming language, please let us know.
 
-Also if you look at GraphQL sources and find [IntrospectionQuery](https://github.com/graphql/graphql-js/blob/master/src/utilities/introspectionQuery.js), you see that its fields and arguments are written using `camelCase` as well.
+Also, if you look at GraphQL sources and find [IntrospectionQuery](https://github.com/graphql/graphql-js/blob/master/src/utilities/introspectionQuery.js), you see that its fields and arguments are written using `camelCase` as well.
+
+This rule can be validated using `graphql-eslint`, read more about [`naming-convention`](https://github.com/dotansimha/graphql-eslint/blob/master/docs/rules/naming-convention.md) rule.

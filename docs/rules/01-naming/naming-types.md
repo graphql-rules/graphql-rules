@@ -20,3 +20,5 @@ Internal GraphQL Introspection Types such as `__Type`, `__Field`, `__InputValue`
 A lot of projects are using the statically typed nature of GraphQL to generate internal type definitions, many of whom use it for static analysis. Both Flowtype and TypeScript use `UpperCamelCase` to name complex types.
 
 According to [Wikipedia](<https://en.wikipedia.org/wiki/Naming_convention_(programming)>), we should use `UpperCamelCase` in JavaScript, Java, Swift, and Kotlin for classes and type declarations.
+
+This rule can be validated using `graphql-eslint`, read more about [`naming-convention`](https://github.com/dotansimha/graphql-eslint/blob/master/docs/rules/naming-convention.md) rule.

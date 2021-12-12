@@ -3,7 +3,7 @@ path: '/rules/misc-docs-markdown'
 title: '10.1. Use markdown for documentation'
 ---
 
-Rule suggested by Ivan Goncharov
+Rule suggested by Ivan Goncharov.
 
 Documentation is an excellent GraphQL advantage. In order to make it actual, its description creates directly in the code of GraphQL types. Documentation is available through the introspection.
 
