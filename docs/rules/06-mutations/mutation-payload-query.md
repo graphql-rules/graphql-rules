@@ -57,7 +57,7 @@ Implementation using standard `graphql`:
 
 ```js
 const QueryType = new GraphQLObjectType({ name: 'Query', fields: ... });
-const MutationType new GraphQLObjectType({ name: 'Mutation', fields: () => {
+const MutationType = new GraphQLObjectType({ name: 'Mutation', fields: () => {
   likePost: {
     args: { id: { type: new GraphQLNonNull(GraphQLInt) } },
     type: new GraphQLObjectType({
@@ -135,5 +135,7 @@ schemaComposer.Mutation.addFields({
       };
     },
   }
-}});
+});
 ```
+
+This rule can be validated using `graphql-eslint`, read more about [`require-field-of-type-query-in-mutation-result`](https://github.com/dotansimha/graphql-eslint/blob/master/docs/rules/require-field-of-type-query-in-mutation-result.md) rule.

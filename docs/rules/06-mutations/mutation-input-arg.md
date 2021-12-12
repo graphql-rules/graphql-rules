@@ -26,3 +26,5 @@ Think of putting arguments into one common input argument as an investment in fu
 At the same time do not skimp on the types – for each mutation, start your Input-type with a unique name. This will allow you to change mutations without looking at the fact that the new semantics can break other mutations.
 
 Also, as of the end of 2018, the GraphQL specification does not have the ability to deprecate arguments (mark them as obsolete). But deprecating field inside the type of input is possible. This is another reason to use the input argument with nesting.
+
+This rule can be validated using `graphql-eslint`, read more about [`input-name`](https://github.com/dotansimha/graphql-eslint/blob/master/docs/rules/input-name.md) rule.
