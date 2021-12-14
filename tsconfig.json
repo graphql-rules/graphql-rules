@@ -20,7 +20,6 @@
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": true,
-
     "strictBindCallApply": false,
     "strictNullChecks": false,
     "strictPropertyInitialization": false,
