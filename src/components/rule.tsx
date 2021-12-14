@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import rehypeReact from 'rehype-react';
-import unistVisit from 'unist-util-visit';
-import unistMap from 'unist-util-map';
+import { visit as unistVisit } from 'unist-util-visit';
+import { map as unistMap } from 'unist-util-map';
 import unistFind from 'unist-util-find';
 
 interface Props {
@@ -113,7 +113,7 @@ const renderCardLinksAst = new rehypeReact({
         </RuleTile>
       );
     },
-    ul: ({ children }) => <RulesList>{children}</RulesList>,
+    ul: ({ children }: any) => <RulesList>{children}</RulesList>,
   },
 }).Compiler;
 

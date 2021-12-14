@@ -1,7 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
-// import Image from '../components/image';
 import SEO from '../components/seo';
 import Rule from '../components/rule';
 
