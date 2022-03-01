@@ -30,7 +30,7 @@ This is only an initial start to a rule book - by working together collaborative
 - [4. Argument rules (Input)](./04-fields-input/README.md)
   - [4.1. Group coupled arguments to the new input-type.](./04-fields-input/input-grouping.md)
   - [4.2.Use strict scalar types for arguments, eg. `DateTime` instead of `String`.](./04-fields-input/input-custom-scalar.md)
-  - [4.3. Mark arguments as `required`, is they are required for query execution.](./04-fields-input/input-non-null.md)
+  - [4.3. Mark arguments as `required` if they are required for query execution.](./04-fields-input/input-non-null.md)
 - [5. Rules of lists](./05-list/README.md)
   - [5.1. To filter the lists, use the `filter` argument, which contains all the available filters.](./05-list/list-filter.md)
   - [5.2. Use argument `sort` of type `Enum` or `[Enum!]` for listings sorting.](./05-list/list-sort.md)
