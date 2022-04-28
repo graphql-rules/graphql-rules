@@ -12,7 +12,7 @@ Instead of having arguments on the same level group them. For example, arguments
 
 ```graphql
 type Query {
-  articles(filter: ArticleFilter, limit: Int): [Article]
+  articles(filter: ArticleFilter, limit: Int): [Article!]!
 }
 
 input ArticleFilter {
