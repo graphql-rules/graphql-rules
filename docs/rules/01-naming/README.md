@@ -17,3 +17,4 @@ In the absence of conclusive research, we suggest following these rules:
 - [1.1. Use `camelCase` for GraphQL fields and arguments.](./naming-fields-args.md)
 - [1.2. Use `UpperCamelCase` for GraphQL types.](./naming-types.md)
 - [1.3. Use `CAPITALIZED_WITH_UNDERSCORES` to name ENUM types.](./naming-enum.md)
+- [1.4. Avoid using `get` in your Query resolvers.](./naming-query-resolvers.md)
