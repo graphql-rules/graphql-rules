@@ -14,12 +14,12 @@ query {
 }
 ```
 
-Frontend developers with the query above in their code will use it something like this (and it's obvious that `getlikeByUsers` looks a little bit awkward):
+Frontend developers with the query above in their code will use it something like this (and it's obvious that `getLikedByUsers` looks a little bit awkward):
 
 ```diff
 export function Example() {
   const { data } = useQuery();
--  return <div>{data.post.getlikeByUsers}</div>
-+  return <div>{data.post.likeByUsers}</div>
+-  return <div>{data.post.getLikedByUsers}</div>
++  return <div>{data.post.likedByUsers}</div>
 }
 ```
