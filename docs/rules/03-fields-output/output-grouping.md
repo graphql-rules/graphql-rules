@@ -63,8 +63,8 @@ Now if `byPhone` isn't `null` then it surely contains a `phone` and `operatorCod
 If you are not familiar with [Union types](https://spec.graphql.org/June2018/#sec-Unions) you can think of them as "either A or B but not both".
 
 ```graphql
-# Basic type for complaint
-type ClaimBase {
+# Basic interface for complaint
+interface ClaimBase {
   text: String!
 }
 
