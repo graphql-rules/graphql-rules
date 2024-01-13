@@ -20,7 +20,10 @@ const Footer = () => (
     <a href="https://twitter.com/nodkz" target="_blank">
       @nodkz
     </a>{' '}
-    and <Link to="/rules/credits">awesome folks</Link>
+    and <Link to="/rules/credits">awesome folks</Link>. Maintained by{' '}
+    <a href="https://twitter.com/rip212" target="_blank">
+      @rip212
+    </a>
   </Container>
 );
 

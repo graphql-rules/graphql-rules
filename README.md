@@ -17,3 +17,17 @@ pnpm develop
 ```
 
 Under the hood site uses [Gatsby](https://www.gatsbyjs.org/). Before start you may read [great tutorial](https://www.gatsbyjs.org/tutorial/part-one/#familiarizing-with-gatsby-pages).
+
+## Contributions
+
+We welcome any contributions to the rules or code. Before making any code contributions make sure to open issue or discussion so you don't waste your time on something that won't be merged. Thanks!
+
+<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+  CC-BY-4.0
+</a>
+By
+<a href="https://twitter.com/nodkz" target="_blank">
+  @nodkz
+</a>
+and <a href="https://graphql-rules.onrender.com/rules/credits">awesome folks</a>.
+Maintained by <a href="https://twitter.com/rip212" target="_blank">@rip212</a>
