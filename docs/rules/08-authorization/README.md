@@ -1,6 +1,6 @@
 ---
 pageType: section
-path: '/rules/authorization'
+path: '/rules/authorization/'
 title: '8. Rules of authorization'
 ---
 

@@ -1,5 +1,5 @@
 ---
-path: '/rules/output-non-null'
+path: '/rules/output-non-null/'
 title: '3.2. Make the fields `NonNull` if data is returned in any situation.'
 ---
 

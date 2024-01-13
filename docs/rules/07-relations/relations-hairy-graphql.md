@@ -1,5 +1,5 @@
 ---
-path: '/rules/relations-hairy-graphql'
+path: '/rules/relations-hairy-graphql/'
 title: '7.1. GraphQL schema should be "hairy"'
 ---
 

@@ -63,7 +63,9 @@ const RuleTile = styled.div`
   /* background-color: red; */
   margin: 0 24px 24px 0;
   /* z-index: -1; hide shadow behind image */
-  box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.07), 0 0 26px -16px rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0px 2px 4px 0 rgba(0, 0, 0, 0.07),
+    0 0 26px -16px rgba(0, 0, 0, 0.12);
   border-radius: 6px;
   display: flex;
 `;

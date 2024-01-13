@@ -1,5 +1,5 @@
 ---
-path: '/rules/mutation-payload-record'
+path: '/rules/mutation-payload-record/'
 title: '6.6.1. In the mutation response, return the modified resource and its id.'
 ---
 

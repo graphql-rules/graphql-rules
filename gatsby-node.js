@@ -13,19 +13,17 @@ exports.createPages = ({ actions, graphql }) => {
 
   const ruleTemplate = path.resolve(`src/templates/ruleTemplate.tsx`);
 
-  return graphql(`
-    {
-      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___path] }, limit: 1000) {
-        edges {
-          node {
-            frontmatter {
-              path
-            }
-          }
+  return graphql(`{
+  allMarkdownRemark(sort: {frontmatter: {path: DESC}}, limit: 1000) {
+    edges {
+      node {
+        frontmatter {
+          path
         }
       }
     }
-  `).then((result) => {
+  }
+}`).then((result) => {
     if (result.errors) {
       return Promise.reject(result.errors);
     }

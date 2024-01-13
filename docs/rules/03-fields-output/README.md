@@ -1,6 +1,6 @@
 ---
 pageType: section
-path: '/rules/output'
+path: '/rules/output/'
 title: '3. Field Rules (Output)'
 ---
 

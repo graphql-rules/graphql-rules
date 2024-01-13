@@ -1,5 +1,5 @@
 ---
-path: '/rules/input-grouping'
+path: '/rules/input-grouping/'
 title: '4.1. Put coupled arguments into own input-types.'
 ---
 

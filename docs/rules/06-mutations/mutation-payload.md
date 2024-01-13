@@ -1,6 +1,6 @@
 ---
 pageType: section
-path: '/rules/mutation-payload'
+path: '/rules/mutation-payload/'
 title: '6.6. Every mutation should have a unique payload type.'
 ---
 

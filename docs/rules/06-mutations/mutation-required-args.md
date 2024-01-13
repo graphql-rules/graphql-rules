@@ -1,5 +1,5 @@
 ---
-path: '/rules/mutation-required-args'
+path: '/rules/mutation-required-args/'
 title: '6.4. Mutations should clearly describe all the mandatory arguments, there should be no options either-either.'
 ---
 

@@ -1,5 +1,5 @@
 ---
-path: '/rules/list-limit-skip'
+path: '/rules/list-limit-skip/'
 title: '5.3 Use `limit` with a default value and `skip` to limit the number of returned items in a list.'
 ---
 

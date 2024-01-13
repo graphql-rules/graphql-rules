@@ -1,6 +1,6 @@
 ---
 pageType: section
-path: '/rules/relations'
+path: '/rules/relations/'
 title: '7. Rules of linkages between types (relationships)'
 ---
 

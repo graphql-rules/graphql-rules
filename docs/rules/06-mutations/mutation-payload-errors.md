@@ -1,5 +1,5 @@
 ---
-path: '/rules/mutation-payload-errors'
+path: '/rules/mutation-payload-errors/'
 title: '6.6.4. In the mutation response, return the errors field with typed user errors.'
 ---
 

@@ -1,5 +1,5 @@
 ---
-path: '/rules/naming-enum'
+path: '/rules/naming-enum/'
 title: '1.3. Name ENUM types using `CAPITALIZED_WITH_UNDERSCORES` style.'
 ---
 

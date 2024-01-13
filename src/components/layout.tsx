@@ -58,7 +58,9 @@ const BodyLeft = styled.div<{ isMenuOpened: boolean }>`
   width: calc(${presets.menuWidth} - ${SHADOW_WIDTH});
   overflow: auto;
   position: fixed;
-  box-shadow: rgba(46, 41, 51, 0.08) 0px 4px 16px, rgba(71, 63, 79, 0.16) 0px 8px ${SHADOW_WIDTH};
+  box-shadow:
+    rgba(46, 41, 51, 0.08) 0px 4px 16px,
+    rgba(71, 63, 79, 0.16) 0px 8px ${SHADOW_WIDTH};
   ${MEDIA_FOR_OVERFLOW_MENU} {
     background-color: white;
     top: 0;
@@ -74,7 +76,7 @@ const BodyCenter = styled.div`
   background: white;
   z-index: 2;
   padding-top: 15px;
-  flex: 1 0 100wh;
+  flex: 1 0 100vh;
   margin-left: ${presets.menuWidth};
   ${MEDIA_FOR_OVERFLOW_MENU} {
     margin-left: 0;

@@ -1,5 +1,5 @@
 ---
-path: '/rules/list-filter'
+path: '/rules/list-filter/'
 title: '5.1. Use `filter` argument to filter list'
 ---
 

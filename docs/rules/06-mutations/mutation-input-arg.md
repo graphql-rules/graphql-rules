@@ -1,5 +1,5 @@
 ---
-path: '/rules/mutation-input-arg'
+path: '/rules/mutation-input-arg/'
 title: '6.5. In mutations, put all variables into one unique input argument.'
 ---
 

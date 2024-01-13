@@ -1,6 +1,6 @@
 ---
 pageType: section
-path: '/rules/mutation'
+path: '/rules/mutation/'
 title: '6. Mutation rules'
 ---
 

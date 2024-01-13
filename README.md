@@ -9,8 +9,8 @@ Feel free to send pull requests and open issues.
 ## Quick local start
 
 ```bash
-yarn install
-yarn develop
+pnpm install
+pnpm develop
 ```
 
 Under the hood site uses [Gatsby](https://www.gatsbyjs.org/). Before start you may read [great tutorial](https://www.gatsbyjs.org/tutorial/part-one/#familiarizing-with-gatsby-pages).

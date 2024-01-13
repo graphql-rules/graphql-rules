@@ -1,5 +1,5 @@
 ---
-path: '/rules/list-pagination'
+path: '/rules/list-pagination/'
 title: '5.4. Use `page`, `perPage` args for pagination and return output type with `items` (array of elements) and `pageInfo` (meta-data).'
 ---
 

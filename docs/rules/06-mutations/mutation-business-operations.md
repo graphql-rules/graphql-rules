@@ -1,5 +1,5 @@
 ---
-path: '/rules/mutation-business-operations'
+path: '/rules/mutation-business-operations/'
 title: '6.2. Think out of the CRUD box - create small mutations for different business operations against the resources.'
 ---
 

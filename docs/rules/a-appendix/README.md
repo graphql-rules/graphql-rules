@@ -1,5 +1,5 @@
 ---
-path: '/rules/appendix'
+path: '/rules/appendix/'
 title: 'A. Appendix'
 ---
 

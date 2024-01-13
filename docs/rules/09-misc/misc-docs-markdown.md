@@ -1,6 +1,6 @@
 ---
-path: '/rules/misc-docs-markdown'
-title: '10.1. Use markdown for documentation'
+path: '/rules/misc-docs-markdown/'
+title: '9.1. Use markdown for documentation'
 ---
 
 Rule suggested by Ivan Goncharov.

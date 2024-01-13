@@ -1,5 +1,5 @@
 ---
-path: '/rules/mutation-batch-changes'
+path: '/rules/mutation-batch-changes/'
 title: '6.3. Consider the ability to perform mutations on multiple items (same type batch changes).'
 ---
 

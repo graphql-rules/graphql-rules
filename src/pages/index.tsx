@@ -10,18 +10,16 @@ function IndexPage() {
       htmlAst,
       frontmatter: { pageType },
     },
-  } = useStaticQuery(
-    graphql`
-      query {
-        markdownRemark(fileAbsolutePath: { glob: "**/rules/README.md" }) {
-          htmlAst
-          frontmatter {
-            pageType
-          }
+  } = useStaticQuery(graphql`
+    query {
+      markdownRemark(fileAbsolutePath: { glob: "**/rules/README.md" }) {
+        htmlAst
+        frontmatter {
+          pageType
         }
       }
-    `
-  );
+    }
+  `);
 
   return (
     <Layout>

@@ -1,5 +1,5 @@
 ---
-path: '/rules/list-sort'
+path: '/rules/list-sort/'
 title: '5.2. Use argument `sort` of type `Enum` or `[Enum!]` to sort lists.'
 ---
 

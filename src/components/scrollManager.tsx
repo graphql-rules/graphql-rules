@@ -20,7 +20,7 @@ export const memoryStore = {
 
 interface Props {
   scrollKey: string;
-  children?: ({ connectScrollTarget: any }) => React.ReactNode;
+  children?: ({ connectScrollTarget }: any) => React.ReactNode;
   scrollStore?: any;
   forceRestore?: boolean;
 }
@@ -29,7 +29,7 @@ interface Props {
  * Component that will save and restore Window scroll position.
  */
 export default class ScrollPositionManager extends React.Component<Props> {
-  _target: Window | {};
+  _target: Window | Record<any, any>;
 
   static defaultProps = {
     scrollStore: memoryStore,

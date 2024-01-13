@@ -1,6 +1,7 @@
 /* eslint-disable */
 
 module.exports = {
+  trailingSlash: `always`,
   siteMetadata: {
     title: `GraphQL Rules`,
     description: `Rules and recommendations mentioned here were the results of 3 years' experience of using GraphQL both on the frontend and backend sides. We also include the recommendations and experience of Caleb Meredith (PostGraphQL author, Facebook ex-employee) and Shopify engineers.`,
@@ -43,7 +44,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-catch-links`,
-    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

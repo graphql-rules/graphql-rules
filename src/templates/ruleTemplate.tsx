@@ -3,10 +3,8 @@ import { graphql } from 'gatsby';
 import Rule from '../components/rule';
 import Layout from '../components/layout';
 
-export default function Template({
-  data, // this prop will be injected by the GraphQL query below.
-}) {
-  const { markdownRemark } = data; // data.markdownRemark holds our post data
+export default function Template(props) {
+  const { markdownRemark } = props.data; // data.markdownRemark holds our post data
   const {
     frontmatter: { title, pageType },
     htmlAst,
@@ -26,7 +24,7 @@ export default function Template({
 }
 
 export const pageQuery = graphql`
-  query($path: String!) {
+  query ($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       htmlAst

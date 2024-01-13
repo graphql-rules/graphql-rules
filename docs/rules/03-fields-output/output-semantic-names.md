@@ -1,5 +1,5 @@
 ---
-path: '/rules/output-semantic-names'
+path: '/rules/output-semantic-names/'
 title: '3.1. Give descriptive names to fields.'
 ---
 

@@ -19,6 +19,7 @@
     "noImplicitAny": false,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
+    "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "strictBindCallApply": false,
     "strictNullChecks": false,
@@ -27,6 +28,7 @@
     "noUnusedParameters": false,
     "noUnusedLocals": true,
     "noEmitOnError": false,
-    "pretty": true
+    "pretty": true,
+    "ignoreDeprecations": "5.0"
   }
 }

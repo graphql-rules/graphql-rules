@@ -1,5 +1,5 @@
 ---
-path: '/rules/output-grouping'
+path: '/rules/output-grouping/'
 title: '3.3. Colocate related fields in custom types'
 ---
 

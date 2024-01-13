@@ -1,5 +1,5 @@
 ---
-path: '/rules/input-custom-scalar'
+path: '/rules/input-custom-scalar/'
 title: '4.2. Use strict scalar types for arguments'
 ---
 

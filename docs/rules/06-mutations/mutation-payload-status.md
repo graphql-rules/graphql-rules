@@ -1,5 +1,5 @@
 ---
-path: '/rules/mutation-payload-status'
+path: '/rules/mutation-payload-status/'
 title: '6.6.2 Return operation status as part of mutation response.'
 ---
 

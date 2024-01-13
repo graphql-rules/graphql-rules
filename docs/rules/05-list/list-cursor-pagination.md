@@ -1,5 +1,5 @@
 ---
-path: '/rules/list-cursor-pagination'
+path: '/rules/list-cursor-pagination/'
 title: '5.5. For infinite lists (infinite scroll) use Relay Cursor Connections Specification.'
 ---
 

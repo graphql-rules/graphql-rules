@@ -1,6 +1,6 @@
 ---
 pageType: section
-path: '/rules'
+path: '/rules/'
 title: 'GraphQL-schema design — make API creation comfortable and prevent pain and suffering to engineers '
 ---
 
@@ -52,8 +52,8 @@ This is only an initial start to a rule book - by working together collaborative
   - [7.1. GraphQL schema should be "hairy"](./07-relations/relations-hairy-graphql.md)
 - [8. Authorization](./08-authorization/README.md)
   - [8.1. Schema diffing based authorization](./08-authorization/authorization-schema-diffing.md)
-- [10. Other rules](./10-misc/README.md)
-  - [10.1. Use markdown for documentation](./10-misc/misc-docs-markdown.md)
-- A. Appendix
+- [9. Other rules](09-misc/README.md)
+  - [10.1. Use markdown for documentation](09-misc/misc-docs-markdown.md)
+- [A. Appendix](./a-appendix/README.md#A-1)
   - [A-1 Useful links](./a-appendix/README.md#A-1)
 - [Credits](./CREDITS.md)

@@ -1,5 +1,5 @@
 ---
-path: '/rules/mutation-payload-query'
+path: '/rules/mutation-payload-query/'
 title: '6.6.3. In the mutation response, return a field of type Query.'
 ---
 

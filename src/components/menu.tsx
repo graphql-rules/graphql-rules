@@ -35,12 +35,12 @@ const MenuContainer = styled.ul`
 const renderAst = new rehypeReact({
   createElement: React.createElement,
   components: {
-    a: ({ href, children }) => (
+    a: ({ href, children }: any) => (
       <MenuItem to={href} activeClassName="active">
         {children}
       </MenuItem>
     ),
-    ul: ({ children }) => <MenuContainer>{children}</MenuContainer>,
+    ul: ({ children }: any) => <MenuContainer>{children}</MenuContainer>,
   },
 }).Compiler;
 
@@ -59,17 +59,15 @@ const Hairline = styled.div`
  * https://github.com/graphql-rules/graphql-rules/blob/master/docs/rules/README.md
  */
 export default function Menu() {
-  const { markdownRemark } = useStaticQuery(
-    graphql`
-      query {
-        markdownRemark(fileAbsolutePath: { glob: "**/rules/README.md" }) {
-          htmlAst
-        }
+  const { markdownRemark } = useStaticQuery(graphql`
+    query {
+      markdownRemark(fileAbsolutePath: { glob: "**/rules/README.md" }) {
+        htmlAst
       }
-    `
-  );
+    }
+  `);
 
-  let data = unistFind(markdownRemark.htmlAst, { type: 'element', tagName: 'ul' });
+  const data = unistFind(markdownRemark.htmlAst, { type: 'element', tagName: 'ul' });
 
   return (
     <Container>

@@ -1,6 +1,6 @@
 ---
 pageType: section
-path: '/rules/type'
+path: '/rules/type/'
 title: '2. Type rules'
 ---
 

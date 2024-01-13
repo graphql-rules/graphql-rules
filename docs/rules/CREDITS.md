@@ -1,5 +1,5 @@
 ---
-path: '/rules/credits'
+path: '/rules/credits/'
 title: 'Thanks...'
 ---
 

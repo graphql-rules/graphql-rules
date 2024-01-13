@@ -1,6 +1,6 @@
 ---
 pageType: section
-path: '/rules/naming'
+path: '/rules/naming/'
 title: '1. Naming rules'
 ---
 

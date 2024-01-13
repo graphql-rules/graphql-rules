@@ -1,5 +1,5 @@
 ---
-path: '/rules/type-enumerable'
+path: '/rules/type-enumerable/'
 title: '2.2. Use Enum for fields that contain a fixed set of values.'
 ---
 

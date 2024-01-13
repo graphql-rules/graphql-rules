@@ -1,5 +1,5 @@
 ---
-path: '/rules/mutation-namespaces'
+path: '/rules/mutation-namespaces/'
 title: '6.1. Use Namespace-types to group mutations within a single resource.'
 ---
 

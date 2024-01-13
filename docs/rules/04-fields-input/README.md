@@ -1,6 +1,6 @@
 ---
 pageType: section
-path: '/rules/input'
+path: '/rules/input/'
 title: '4. Argument rules'
 ---
 

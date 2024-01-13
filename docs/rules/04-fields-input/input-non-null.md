@@ -1,5 +1,5 @@
 ---
-path: '/rules/input-non-null'
+path: '/rules/input-non-null/'
 title: '4.3. Mark arguments as `required` if they are required to fulfill the request.'
 ---
 

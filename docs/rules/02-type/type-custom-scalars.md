@@ -1,5 +1,5 @@
 ---
-path: '/rules/type-custom-scalars'
+path: '/rules/type-custom-scalars/'
 title: '2.1. Use custom scalar types to declare fields and arguments with certain semantic value.'
 ---
 

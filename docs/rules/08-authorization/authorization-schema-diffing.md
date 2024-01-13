@@ -1,5 +1,5 @@
 ---
-path: '/rules/authorization-schema-diffing'
+path: '/rules/authorization-schema-diffing/'
 title: '8.1. Schema diffing based authorization'
 ---
 

@@ -1,5 +1,5 @@
 ---
-path: '/rules/naming-types'
+path: '/rules/naming-types/'
 title: '1.2. Use UpperCamelCase for naming GraphQL types.'
 ---
 

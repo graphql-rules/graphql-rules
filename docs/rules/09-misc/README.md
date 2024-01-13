@@ -1,10 +1,10 @@
 ---
 pageType: section
-path: '/rules/misc'
-title: '10. Other rules'
+path: '/rules/misc/'
+title: '9. Other rules'
 ---
 
-## 10. Other rules
+## 9. Other rules
 
 <!-- card-links -->
 

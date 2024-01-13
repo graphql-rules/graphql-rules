@@ -1,5 +1,5 @@
 ---
-path: '/rules/naming-query-resolvers'
+path: '/rules/naming-query-resolvers/'
 title: '1.4. Avoid using `get` in your Query resolvers.'
 ---
 

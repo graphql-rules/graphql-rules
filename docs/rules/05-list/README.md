@@ -1,6 +1,6 @@
 ---
 pageType: section
-path: '/rules/list'
+path: '/rules/list/'
 title: '5. Rules of lists'
 ---
 
