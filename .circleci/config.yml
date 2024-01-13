@@ -2,31 +2,15 @@ version: 2
 jobs:
   Release:
     docker:
-      - image: circleci/node:14
+      - image: circleci/node:20
 
     working_directory: ~/repo
 
     steps:
       - checkout
-
-      # Download and cache dependencies
-      - restore_cache:
-          keys:
-            # Find a cache corresponding to this specific package-lock.json checksum
-            # when this file is changed, this key will fail
-            - v1-npm-deps-{{ checksum "yarn.lock" }}
-            # Find the most recently generated cache used from any branch
-            - v1-npm-deps-
-
       - run:
           name: Install Dependencies
-          command: yarn install
-
-      - save_cache:
-          key: v1-npm-deps-{{ checksum "yarn.lock" }}
-          paths:
-            - ./node_modules
-            - ~/.cache/yarn
+          command: pnpm install
 
       - run:
           name: Gatsby Build
