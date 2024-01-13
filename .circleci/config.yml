@@ -2,7 +2,7 @@ version: 2
 jobs:
   Release:
     docker:
-      - image: circleci/node:20
+      - image: circleci/node:18
 
     working_directory: ~/repo
 
@@ -10,7 +10,7 @@ jobs:
       - checkout
       - run:
           name: Install Dependencies
-          command: pnpm install
+          command: npm i -g pnpm && pnpm install
 
       - run:
           name: Gatsby Build
