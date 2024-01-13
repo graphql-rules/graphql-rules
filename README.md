@@ -1,6 +1,8 @@
 # graphql-rules
 
-Currently, site available here [https://graphql-rules.com/](https://graphql-rules.com/)
+~~Currently, site available here [https://graphql-rules.com/](https://graphql-rules.com/)~~
+Likely temporarily, while we figure out domain ownership etc. site available here [https://graphql-rules.onrender.com](https://graphql-rules.onrender.com)
+
 
 Content of rules can be found here [docs/rules](https://github.com/graphql-rules/graphql-rules/tree/master/docs/rules)
 
